@@ -3,7 +3,7 @@ if exists("b:current_syntax")
 endif
 
 syntax keyword crawlKeyword loop times to while
-syntax keyword crawlKeyword if elsif else
+syntax keyword crawlKeyword if elsif else end
 syntax keyword crawlKeyword class return
 
 syntax keyword crawlFunction local function return
