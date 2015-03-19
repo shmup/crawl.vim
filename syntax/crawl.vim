@@ -14,6 +14,9 @@ syntax match crawlOperator "\v\~\="
 
 syntax match crawlComment "\v#.*$"
 
+syntax match crawlBraces "[{}()\[\]]"
+
+highlight link crawlBraces Braces
 highlight link crawlComment Comment
 highlight link crawlOperator Operator
 highlight link crawlKeyword Keyword
