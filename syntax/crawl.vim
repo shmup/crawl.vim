@@ -13,6 +13,7 @@ syntax match crawlOperator "\v\+\="
 syntax match crawlOperator "\v\~\="
 
 syntax region crawlString start=/\v"/ skip=/\v\\./ end=/\v"/
+syntax region crawlString start=/\v(/ skip=/\v\\./ end=/\v)/
 
 syntax match crawlComment "\v#.*$"
 syntax match crawlComment "\v--.*$"
