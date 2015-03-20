@@ -12,6 +12,8 @@ syntax match crawlOperator "\v\="
 syntax match crawlOperator "\v\+\="
 syntax match crawlOperator "\v\~\="
 
+syntax region crawlString start=/\v"/ skip=/\v\\./ end=/\v"/
+
 syntax match crawlComment "\v#.*$"
 syntax match crawlComment "\v--.*$"
 
@@ -22,5 +24,6 @@ highlight link crawlComment Comment
 highlight link crawlOperator Operator
 highlight link crawlKeyword Keyword
 highlight link crawlFunction Function
+highlight link crawlString String
 
 let b:current_syntax = "crawl"
